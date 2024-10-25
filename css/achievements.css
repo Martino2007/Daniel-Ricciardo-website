@@ -1,0 +1,31 @@
+/* Achievement Page Styles */
+.achievement-list {
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the achievement items */
+  gap: 20px; /* Space between items */
+}
+
+.achievement-item {
+  text-align: center;
+  margin-bottom: 20px; /* Space below each achievement item */
+  width: 250px; /* Fixed width for each achievement item */
+}
+
+.achievement-item img {
+  width: 100%; /* Set to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a max height for uniformity */
+  border-radius: 15px; /* Keep the rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Deep shadow around images */
+  transition: transform 0.3s ease-in-out; /* Animation on hover */
+}
+
+.achievement-item img:hover {
+  transform: scale(1.05); /* Image enlarges slightly on hover */
+}
+
+.achievement-item p {
+  font-style: italic;
+  color: #bbbbbb; /* Muted text for captions */
+}

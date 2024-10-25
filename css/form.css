@@ -1,0 +1,46 @@
+/* Forms */
+form {
+  max-width: 600px; /* Limit the form width */
+  margin: 0 auto; /* Center the form */
+  padding: 30px;
+  background-color: #2a2a2a; /* Dark background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Shadow effect */
+}
+
+form label {
+  display: block; /* Ensure labels are block elements */
+  color: #e0e0e0; /* Light gray text */
+  margin-bottom: 10px; /* Space between label and input */
+  font-size: 1rem; /* Label font size */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Full width for input fields */
+  padding: 15px; /* Padding inside input fields */
+  margin-bottom: 20px; /* Space below each input */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  background-color: #1f1f1f; /* Dark background for input fields */
+  color: #e0e0e0; /* Light gray text */
+  font-size: 1rem; /* Input text size */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+form button {
+  width: 100%; /* Full width for the submit button */
+  padding: 15px; /* Padding for button */
+  background-color: #ff2d2d; /* Neon red for submit button */
+  color: #121212; /* Dark text on button */
+  font-size: 1.2rem; /* Button font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* No border */
+}
+
+form button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #ff2d2d; /* Neon red text on hover */
+}
