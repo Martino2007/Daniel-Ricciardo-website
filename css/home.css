@@ -35,3 +35,42 @@
   font-style: italic;
   color: #bbbbbb; /* Muted text for captions */
 }
+
+/* Random Quote Section */
+#quote-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+#quote-container {
+  margin-bottom: 20px;
+}
+
+#quote {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-style: italic;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #ff2d2d;
+  color: #121212;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #ff2d2d;
+}
