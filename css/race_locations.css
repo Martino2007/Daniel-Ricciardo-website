@@ -1,0 +1,67 @@
+/* Ensure the map container fits well within the layout */
+#map-container {
+  width: 100%;
+  height: 500px; /* Set a fixed height for the map */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure it doesn't overflow */
+}
+
+#map {
+  width: 100%;
+  height: 600px;  /* You can adjust the height as needed */
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Deep shadow around map */
+}
+
+
+/* Style the race list section */
+#race-list {
+  margin-top: 20px;
+}
+
+#race-list h2 {
+  font-size: 2rem;
+  color: #ff2d2d; /* Neon red color for titles */
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ff2d2d; /* Underline the heading */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#race-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#race-list li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #e0e0e0; /* Light gray color for text */
+}
+
+/* Add a subtle hover effect for the race list items */
+#race-list li:hover {
+  color: #ff2d2d; /* Neon red color on hover */
+  cursor: pointer;
+}
+
+/* Ensure responsiveness and that everything looks good on smaller screens */
+@media screen and (max-width: 768px) {
+  #map-container {
+      height: 300px; /* Adjust map height for smaller screens */
+  }
+
+  #race-list {
+      margin-top: 10px;
+  }
+
+  #race-list h2 {
+      font-size: 1.8rem; /* Slightly smaller title on mobile */
+  }
+
+  #race-list li {
+      font-size: 1rem; /* Smaller list item font size */
+  }
+}

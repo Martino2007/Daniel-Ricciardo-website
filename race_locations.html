@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Locations</title>
+    
+    <!-- Link to general CSS file (to apply the basic theme) -->
+    <link rel="stylesheet" href="css/general.css" />
+    
+    <!-- Link to specific CSS for race locations page -->
+    <link rel="stylesheet" href="css/race_locations.css" />
+    
+    <!-- Leaflet CSS for map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Race Locations Map</h1>
+        <nav>
+          <ul>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="career.html">Career Highlights</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="fan-club.html">Fan Club</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="race_locations.html">Race Locations</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="map"></div> <!-- Map will be displayed here -->
+    </main>
+
+    <!-- Link to the Leaflet JS library (load this before your custom JS) -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Now link to your custom JavaScript file (race_locations.js) -->
+    <script src="js/race_locations.js"></script>
+</body>
+</html>
