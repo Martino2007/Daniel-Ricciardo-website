@@ -1,4 +1,3 @@
-// Initialize the map
 var map = L.map('map').setView([51.505, -0.09], 2);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -109,5 +108,3 @@ L.marker([28.350799460072167, 77.53517277626219]).addTo(map)
 
 L.marker([34.738435255551536, 126.41515612511479]).addTo(map) 
   .bindPopup("<b>Formula 1 Race Location</b><br>Yeongam, South-Korea");
-
-

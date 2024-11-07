@@ -12,20 +12,16 @@ const quotes = [
   "Sometimes nostalgia is a cage"
 ];
 
-// Get the button and quote display elements
 const quoteButton = document.getElementById("generate-quote-btn");
 const quoteDisplay = document.getElementById("quote");
 
-// Function to generate a random quote
 function generateRandomQuote() {
-  // Get a random index from the quotes array
+
   const randomIndex = Math.floor(Math.random() * quotes.length);
-  // Display the quote
+
   quoteDisplay.textContent = quotes[randomIndex];
 }
 
-// Add an event listener to the button
 quoteButton.addEventListener("click", generateRandomQuote);
 
-// Optional: Display a random quote on page load
 window.addEventListener("load", generateRandomQuote);
