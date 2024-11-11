@@ -21,3 +21,107 @@
   font-style: italic;
   color: #bbbbbb; /* Muted text for captions */
 }
+
+/* Main Navbar Styling */
+.main-navbar {
+  background-color: #1f1f1f;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Quick-Access Top Navigation Bar Styles */
+.top-navbar {
+  position: relative; /* Stays in place */
+  top: 0; /* Ensure it's positioned immediately below the main navbar */
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: block;
+  margin-top: -1px;
+}
+
+/* Dropdown menu in the navbar */
+.top-navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-navbar ul li {
+  position: relative; /* Position it relative to handle dropdown */
+  margin: 0 15px;
+}
+
+.top-navbar ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.top-navbar ul li a:hover,
+.top-navbar ul li a.active {
+  color: #ff2d2d;
+}
+
+/* Dropdown styling */
+.top-navbar ul li .dropdown {
+  display: none; /* Hide the dropdown initially */
+  position: absolute;
+  top: 100%; /* Display the dropdown directly below the link */
+  left: 0;
+  background-color: #1f1f1f;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.top-navbar ul li:hover .dropdown {
+  display: block; /* Show the dropdown when hovering over the parent link */
+}
+
+.top-navbar ul li .dropdown li {
+  padding: 10px;
+  width: 180px; /* Set a fixed width for the dropdown items */
+}
+
+.top-navbar ul li .dropdown li a {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.top-navbar ul li .dropdown li a:hover {
+  background-color: #ff2d2d;
+  color: #121212; /* Change color when hovered */
+}
+
+/* Adjusting for page content padding */
+main {
+  padding-top: 120px; /* To account for both the main navbar and the top navbar */
+}
+
+/* Sticky Navbar Behavior (Show after scrolling past the main navbar) */
+.sticky-nav {
+  position: fixed; /* Fixed positioning when scrolled */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+
+/* Ensuring the main content is not hidden behind the sticky navbar */
+main {
+  padding-top: 180px; /* Increased padding to account for both navbars */
+}
