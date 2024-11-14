@@ -32,7 +32,7 @@
 
 .top-navbar {
   position: fixed;
-  top: 30%; /* Adjust this value to move the navbar higher or lower */
+  top: 31%; /* Adjust this value to move the navbar higher or lower */
   right: 0;
   width: 140px; /* Narrower sidebar */
   transform: translateY(-50%); /* Center adjustment */
