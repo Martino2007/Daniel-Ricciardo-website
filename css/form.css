@@ -1,46 +1,45 @@
-/* Forms */
 form {
-  max-width: 600px; /* Limit the form width */
-  margin: 0 auto; /* Center the form */
+  max-width: 600px; 
+  margin: 0 auto; 
   padding: 30px;
-  background-color: #2a2a2a; /* Dark background for the form */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Shadow effect */
+  background-color: #2a2a2a; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
 }
 
 form label {
-  display: block; /* Ensure labels are block elements */
-  color: #e0e0e0; /* Light gray text */
-  margin-bottom: 10px; /* Space between label and input */
-  font-size: 1rem; /* Label font size */
+  display: block; 
+  color: #e0e0e0; 
+  margin-bottom: 10px; 
+  font-size: 1rem; 
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  width: 100%; /* Full width for input fields */
-  padding: 15px; /* Padding inside input fields */
-  margin-bottom: 20px; /* Space below each input */
-  border-radius: 5px; /* Rounded corners */
-  border: none; /* No border */
-  background-color: #1f1f1f; /* Dark background for input fields */
-  color: #e0e0e0; /* Light gray text */
-  font-size: 1rem; /* Input text size */
-  box-sizing: border-box; /* Include padding in width */
+  width: 100%; 
+  padding: 15px; 
+  margin-bottom: 20px; 
+  border-radius: 5px; 
+  border: none; 
+  background-color: #1f1f1f; 
+  color: #e0e0e0; 
+  font-size: 1rem; 
+  box-sizing: border-box; 
 }
 
 form button {
-  width: 100%; /* Full width for the submit button */
-  padding: 15px; /* Padding for button */
-  background-color: #ff2d2d; /* Neon red for submit button */
-  color: #121212; /* Dark text on button */
-  font-size: 1.2rem; /* Button font size */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  border: none; /* No border */
+  width: 100%; 
+  padding: 15px; 
+  background-color: #ff2d2d; 
+  color: #121212; 
+  font-size: 1.2rem; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  border: none; 
 }
 
 form button:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #ff2d2d; /* Neon red text on hover */
+  background-color: #ffffff; 
+  color: #ff2d2d; 
 }

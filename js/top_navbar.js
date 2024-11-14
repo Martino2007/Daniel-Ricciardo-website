@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".top-navbar ul li a");
   const sections = document.querySelectorAll("main section");
 
-  // Scroll event for updating active link
   function onScroll() {
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("scroll", onScroll);
 
-  // Function to hide all dropdowns
   function hideAllDropdowns() {
     const allDropdowns = document.querySelectorAll('.top-navbar ul li .dropdown');
     allDropdowns.forEach(dropdown => {
@@ -30,25 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Dropdown functionality on hover with nested dropdowns
   const dropdownLinks = document.querySelectorAll('.top-navbar ul li');
 
   dropdownLinks.forEach(link => {
     const dropdown = link.querySelector('.dropdown');
 
-    // Show dropdown on hover
     link.addEventListener('mouseenter', () => {
-      hideAllDropdowns(); // Hide any open dropdowns
-      if (dropdown) dropdown.style.display = 'block'; // Show the current dropdown
+      hideAllDropdowns(); 
+      if (dropdown) dropdown.style.display = 'block';
     });
 
-    // Hide dropdown on hover out
     link.addEventListener('mouseleave', () => {
       if (dropdown) dropdown.style.display = 'none';
     });
   });
 
-  // Close all dropdowns when clicking outside
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.top-navbar')) {
       hideAllDropdowns();

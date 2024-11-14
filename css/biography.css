@@ -1,4 +1,3 @@
-/* Biography Page Styles */
 .bio-image {
   text-align: center;
   margin-bottom: 20px;
@@ -22,7 +21,6 @@
   color: #bbbbbb;
 }
 
-/* Main Navbar Styling */
 .main-navbar {
   background-color: #1f1f1f;
   padding: 10px 0;
@@ -32,10 +30,10 @@
 
 .top-navbar {
   position: fixed;
-  top: 31%; /* Adjust this value to move the navbar higher or lower */
+  top: 31%;
   right: 0;
-  width: 140px; /* Narrower sidebar */
-  transform: translateY(-50%); /* Center adjustment */
+  width: 140px;
+  transform: translateY(-50%);
   background-color: #1f1f1f;
   padding: 15px 0;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
@@ -45,7 +43,6 @@
   align-items: flex-start;
 }
 
-/* Align sidebar content */
 .top-navbar ul {
   display: flex;
   flex-direction: column;
@@ -63,7 +60,7 @@
 .top-navbar ul li a {
   color: #e0e0e0;
   text-decoration: none;
-  font-size: 0.9rem; /* Smaller font for compact sidebar */
+  font-size: 0.9rem;
   padding: 8px 10px;
   display: block;
   width: 100%;
@@ -75,20 +72,19 @@
 }
 
 .top-navbar ul li .dropdown {
-  display: none; /* Hide initially */
+  display: none;
   position: absolute;
   top: 0;
-  right: 100%; /* Position dropdown to the left of main links */
+  right: 100%;
   background-color: #1f1f1f;
   list-style-type: none;
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  max-width: 200px; /* Optional: ensure dropdowns are wide enough to show all links */
+  max-width: 200px;
 }
 
-/* Dropdown item styling */
 .top-navbar ul li .dropdown li {
   padding: 10px;
 }
@@ -105,17 +101,14 @@
   color: #121212;
 }
 
-/* Show dropdown on hover */
 .top-navbar ul li:hover > .dropdown {
   display: block;
 }
 
-/* Ensure nested dropdowns show properly on hover */
 .top-navbar ul li > .dropdown > li:hover > .dropdown {
-  display: block; /* Allow nested dropdowns to appear on hover */
+  display: block;
 }
 
-/* Adjust padding for main content to avoid sidebar overlap */
 main {
   padding-right: 180px;
 }
