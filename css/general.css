@@ -1,24 +1,23 @@
-/* General Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light gray text for readability */
+  background-color: #121212; 
+  color: #e0e0e0; 
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #1f1f1f; /* Dark header */
+  background-color: #1f1f1f; 
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
 header h1 {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
-  color: #ff2d2d; /* Neon red accent for the title */
+  color: #ff2d2d; 
   letter-spacing: 2px;
 }
 
@@ -43,34 +42,32 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff2d2d; /* Neon red hover effect */
-  border-bottom: 2px solid #ff2d2d; /* Underline on hover */
+  color: #ff2d2d; 
+  border-bottom: 2px solid #ff2d2d; 
 }
 
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 40px;
-  background-color: #1a1a1a; /* Dark section background */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+  background-color: #1a1a1a; 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
   border-radius: 10px;
-  overflow: hidden; /* Clear floats */
+  overflow: hidden; 
 }
 
-/* Section Titles */
 h2 {
   font-size: 2.5rem;
-  color: #ff2d2d; /* Neon red */
+  color: #ff2d2d; 
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  border-bottom: 3px solid #ff2d2d; /* Underline the heading */
+  border-bottom: 3px solid #ff2d2d; 
   padding-bottom: 10px;
   margin-bottom: 40px;
 }
 
-/* Buttons */
 button {
-  background-color: #ff2d2d; /* Neon red for primary actions */
+  background-color: #ff2d2d; 
   color: #121212;
   border: none;
   padding: 12px 24px;
@@ -81,21 +78,19 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff; /* White hover effect */
-  color: #ff2d2d; /* Neon red text on hover */
+  background-color: #ffffff; 
+  color: #ff2d2d; 
 }
 
-/* Footer Styles */
 footer {
   background-color: #1f1f1f;
   color: #e0e0e0;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow at the top of the footer */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -108,31 +103,29 @@ footer {
 }
 
 section {
-  animation: fadeIn 1s ease-in; /* Fade-in animation for sections */
+  animation: fadeIn 1s ease-in; 
 }
 
-/* Clearfix */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   nav ul {
-      flex-direction: column; /* Stack navigation items vertically */
+    flex-direction: column; 
   }
 
   nav ul li {
-      margin: 10px 0; /* Space between nav items */
+    margin: 10px 0; 
   }
 
   h2 {
-      font-size: 2rem; /* Smaller heading size on mobile */
+    font-size: 2rem; 
   }
 
   main {
-      padding: 20px; /* Reduced padding for main content */
+    padding: 20px; 
   }
 }

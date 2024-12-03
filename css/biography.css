@@ -1,4 +1,3 @@
-/* Biography Page Styles */
 .bio-image {
   text-align: center;
   margin-bottom: 20px;
@@ -6,23 +5,22 @@
 }
 
 .bio-image img {
-  width: 100%; /* Set to 100% of its container */
-  max-height: 300px; /* Set a max height for uniformity */
-  border-radius: 15px; /* Keep the rounded corners */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Deep shadow around images */
-  transition: transform 0.3s ease-in-out; /* Animation on hover */
+  width: 100%;
+  max-height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out;
 }
 
 .bio-image img:hover {
-  transform: scale(1.05); /* Image enlarges slightly on hover */
+  transform: scale(1.05);
 }
 
 .bio-image p {
   font-style: italic;
-  color: #bbbbbb; /* Muted text for captions */
+  color: #bbbbbb;
 }
 
-/* Main Navbar Styling */
 .main-navbar {
   background-color: #1f1f1f;
   padding: 10px 0;
@@ -30,39 +28,42 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Quick-Access Top Navigation Bar Styles */
 .top-navbar {
-  position: relative; /* Stays in place */
-  top: 0; /* Ensure it's positioned immediately below the main navbar */
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: 31%;
+  right: 0;
+  width: 140px;
+  transform: translateY(-50%);
   background-color: #1f1f1f;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  display: block;
-  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Dropdown menu in the navbar */
 .top-navbar ul {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .top-navbar ul li {
-  position: relative; /* Position it relative to handle dropdown */
-  margin: 0 15px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .top-navbar ul li a {
   color: #e0e0e0;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
 }
 
 .top-navbar ul li a:hover,
@@ -70,27 +71,22 @@
   color: #ff2d2d;
 }
 
-/* Dropdown styling */
 .top-navbar ul li .dropdown {
-  display: none; /* Hide the dropdown initially */
+  display: none;
   position: absolute;
-  top: 100%; /* Display the dropdown directly below the link */
-  left: 0;
+  top: 0;
+  right: 100%;
   background-color: #1f1f1f;
   list-style-type: none;
   padding: 0;
   margin: 0;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-}
-
-.top-navbar ul li:hover .dropdown {
-  display: block; /* Show the dropdown when hovering over the parent link */
+  max-width: 200px;
 }
 
 .top-navbar ul li .dropdown li {
   padding: 10px;
-  width: 180px; /* Set a fixed width for the dropdown items */
 }
 
 .top-navbar ul li .dropdown li a {
@@ -98,30 +94,21 @@
   font-size: 0.9rem;
   padding: 5px 10px;
   display: block;
-  text-decoration: none;
 }
 
 .top-navbar ul li .dropdown li a:hover {
   background-color: #ff2d2d;
-  color: #121212; /* Change color when hovered */
+  color: #121212;
 }
 
-/* Adjusting for page content padding */
-main {
-  padding-top: 120px; /* To account for both the main navbar and the top navbar */
-}
-
-/* Sticky Navbar Behavior (Show after scrolling past the main navbar) */
-.sticky-nav {
-  position: fixed; /* Fixed positioning when scrolled */
-  top: 0;
-  left: 0;
-  width: 100%;
+.top-navbar ul li:hover > .dropdown {
   display: block;
-  z-index: 1000;
 }
 
-/* Ensuring the main content is not hidden behind the sticky navbar */
+.top-navbar ul li > .dropdown > li:hover > .dropdown {
+  display: block;
+}
+
 main {
-  padding-top: 180px; /* Increased padding to account for both navbars */
+  padding-right: 180px;
 }
