@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (fanClubForm) {
       fanClubForm.addEventListener("submit", function(event) {
           event.preventDefault();
-          alert("Thank you for joining the fan club, " + fanClubForm.name.value + "!");
+          alert(`Thank you for joining the fan club, ${fanClubForm.elements["name"].value}!`);
           fanClubForm.reset();
       });
   }

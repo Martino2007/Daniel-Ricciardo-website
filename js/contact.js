@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (contactForm) {
       contactForm.addEventListener("submit", function(event) {
           event.preventDefault();
-          alert("Thank you for your message, " + contactForm.name.value + "!");
+          alert(`Thank you for your message, ${contactForm.elements["name"].value}!`);
           contactForm.reset();
       });
   }
