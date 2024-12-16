@@ -34,15 +34,15 @@
         <form action="https://formspree.io/f/xzzbzqpe" method="POST">
           <label>
             * Name:
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </label>
           <label>
             * Email:
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
           </label>
           <label>
             * Message:
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
           </label>
           <button type="submit">Send</button>
         </form>
@@ -52,7 +52,6 @@
     <footer>
       <p>&copy; 2024 Daniel Ricciardo Fan Page</p>
     </footer>
-
-    <script src="js/contact.js"></script>
   </body>
+  <script src="js/contact.js"></script>
 </html>

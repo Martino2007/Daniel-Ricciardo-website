@@ -31,14 +31,15 @@
     <main>
       <section>
         <h2>Join the Fan Club</h2>
+        <!-- The form action URL is used to submit the form data to Formspree for processing -->
         <form action="https://formspree.io/f/xpwzweaj" method="POST">
           <label>
             * Name:
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </label>
           <label>
             * Email:
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
           </label>
           <button type="submit">Send</button>
         </form>

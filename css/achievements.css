@@ -19,7 +19,6 @@
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease-in-out;
-  will-change: transform;
 }
 
 .achievement-item img:hover {
