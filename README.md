@@ -14,3 +14,6 @@ We will always miss you, Daniel. Enjoy the butterflies 🦋
 <br>
 <br>
 For more about Daniel's incredible journey, memorable races, and his biggest moments, explore the rest of our site!
+<br>
+<br>
+If you want to contribute to the website feel free to clone it and add some stuff
