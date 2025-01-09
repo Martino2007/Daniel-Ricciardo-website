@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Club - Daniel Ricciardo</title>
+    <link rel="stylesheet" href="css/fan-club.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fan Club - Daniel Ricciardo</title>
-	<link rel="stylesheet" href="css/fan-club.css">
-	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/form.css">
-</head>
+  <body>
+    <header>
+      <h1>Daniel Ricciardo</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="career.html">Career Highlights</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="race_locations.html">Race Locations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="songs.html">Songs</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="fan-club.html" class="active">Fan Club</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-	<header>
-		<h1>Daniel Ricciardo</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="biography.html">Biography</a></li>
-				<li><a href="career.html">Career Highlights</a></li>
-				<li><a href="achievements.html">Achievements</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="race_locations.html">Race Locations</a></li>
-			</ul>
-		</nav>
-	</header>
+    <main>
+      <section>
+        <h2>Join the Fan Club</h2>
+        <!-- The form action URL is used to submit the form data to Formspree for processing -->
+        <form action="https://formspree.io/f/xpwzweaj" method="POST">
+          <label>
+            * Name:
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            * Email:
+            <input type="email" name="email" required />
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
 
-	<main>
-		<section>
-			<h2>Join the Fan Club</h2>
-			<form action="https://formspree.io/f/xpwzweaj" method="POST">
-				<label>
-					* Name:
-					<input type="text" name="name">
-				</label>
-				<label>
-					* Email:
-					<input type="email" name="email">
-				</label>
-				<button type="submit">Send</button>
-			</form>
-		</section>
-	</main>
+    <footer>
+      <p>&copy; 2024 Daniel Ricciardo Fan Page</p>
+    </footer>
 
-	<footer>
-		<p>&copy; 2024 Daniel Ricciardo Fan Page</p>
-	</footer>
-
-	<script src="js/fan-club.js"></script>
-</body>
-
+    <script src="js/fan-club.js"></script>
+  </body>
 </html>

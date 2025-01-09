@@ -1,16 +1,16 @@
 #map-container {
   width: 100%;
-  height: 500px; 
+  height: 500px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 #map {
   width: 100%;
-  height: 600px;  
+  height: 600px;
   border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -20,10 +20,10 @@
 
 #race-list h2 {
   font-size: 2rem;
-  color: #ff2d2d; 
+  color: #ff2d2d;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  border-bottom: 3px solid #ff2d2d; 
+  border-bottom: 3px solid #ff2d2d;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -36,17 +36,21 @@
 #race-list li {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #e0e0e0; 
+  color: #e0e0e0;
 }
 
 #race-list li:hover {
-  color: #ff2d2d; 
+  color: #ff2d2d;
   cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
   #map-container {
-    height: 300px; 
+    height: 300px;
+  }
+
+  #map {
+    height: 400px;
   }
 
   #race-list {
@@ -54,10 +58,10 @@
   }
 
   #race-list h2 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   #race-list li {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }

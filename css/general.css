@@ -1,23 +1,25 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #121212; 
-  color: #e0e0e0; 
+  background-color: #121212;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
-  background-color: #1f1f1f; 
+  background-color: #1f1f1f;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
-  color: #ff2d2d; 
+  color: #ff2d2d;
   letter-spacing: 2px;
 }
 
@@ -31,6 +33,7 @@ nav ul {
 
 nav ul li {
   margin: 0 20px;
+  position: relative;
 }
 
 nav ul li a {
@@ -41,33 +44,45 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-  color: #ff2d2d; 
-  border-bottom: 2px solid #ff2d2d; 
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff2d2d;
+  border-bottom: 2px solid #ff2d2d;
+}
+
+nav ul li:nth-child(8)::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #e0e0e0;
 }
 
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 40px;
-  background-color: #1a1a1a; 
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+  background-color: #1a1a1a;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 h2 {
   font-size: 2.5rem;
-  color: #ff2d2d; 
+  color: #ff2d2d;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  border-bottom: 3px solid #ff2d2d; 
+  border-bottom: 3px solid #ff2d2d;
   padding-bottom: 10px;
   margin-bottom: 40px;
 }
 
 button {
-  background-color: #ff2d2d; 
+  background-color: #ff2d2d;
   color: #121212;
   border: none;
   padding: 12px 24px;
@@ -78,8 +93,8 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff; 
-  color: #ff2d2d; 
+  background-color: #ffffff;
+  color: #ff2d2d;
 }
 
 footer {
@@ -88,7 +103,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeIn {
@@ -103,29 +118,28 @@ footer {
 }
 
 section {
-  animation: fadeIn 1s ease-in; 
+  animation: fadeIn 1s ease-in;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
   nav ul {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   nav ul li {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   main {
-    padding: 20px; 
+    padding: 20px;
   }
 }
