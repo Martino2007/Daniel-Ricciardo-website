@@ -1,4 +1,4 @@
-# Contributing to Daniel Ricciardo website
+# Contributing to the Daniel Ricciardo Website
 
 Thank you for considering contributing! Please follow these steps:
 
