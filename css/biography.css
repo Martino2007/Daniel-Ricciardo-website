@@ -30,7 +30,7 @@
 
 .top-navbar {
   position: fixed;
-  top: 31%;
+  top: 34%;
   left: 0;
   width: 140px;
   transform: translateY(-50%);
@@ -107,8 +107,4 @@
 
 .top-navbar ul li > .dropdown > li:hover > .dropdown {
   display: block;
-}
-
-main {
-  padding-right: 180px;
 }
